@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Крестики нолики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <label for="first-num">
+            <span>Первое число</span>
+            <input type="number" class="input" min="0" id="num1">
+        </label>
+
+        <div class="operators">
+
+            <button type="radio" name="operand" data-operand="+" class="operator" id="plus">   
+                &plus;
+            </button>
+            <button type="radio" name="operand" data-operand="-" class="operator" id="minus">
+                &minus;
+            </button>
+            <button type="radio" name="operand" data-operand="*" class="operator" id="plus">
+                &times;
+            </button>
+            <button type="radio" name="operand" data-operand="/" class="operator" id="plus">
+                &divide;
+            </button>
+
+        </div>
+
+        <label for="second-num">
+            <span>Второе число</span>
+            <input type="number" class="input" min="0" id="num2">
+        </label>
+        <button class="btn">Посчитать</button>
+        <button class="clean">Очистить</button>
+        <label for="res">
+            <input type="text" id="res" readonly class="result">
+            <span>Результат</span>
+        </label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
